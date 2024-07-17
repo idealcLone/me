@@ -1,5 +1,6 @@
 import Section from '../../../UI/Section';
 import experience from '../../../../consts/experience.tsx';
+import Icon from '../../../UI/Icon';
 
 export default function Experience() {
   return (
@@ -14,7 +15,9 @@ export default function Experience() {
             <div>{job.location}</div>
             <ul className={'flex gap-2 mt-2'}>
               {job.stack.map((technology, index) => (
-                <li key={index}>{technology.icon}</li>
+                <li key={index}>
+                  <Icon element={technology.icon} name={technology.name} />
+                </li>
               ))}
             </ul>
           </li>

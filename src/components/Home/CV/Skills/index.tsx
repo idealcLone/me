@@ -1,5 +1,6 @@
 import Section from '../../../UI/Section';
 import skills from '../../../../consts/skills.tsx';
+import Icon from '../../../UI/Icon';
 
 export default function Skills() {
   return (
@@ -14,7 +15,9 @@ export default function Skills() {
             <h3>{skill.title}</h3>
             <ul className={'flex gap-4 items-center flex-wrap justify-center'}>
               {skill.stack.map((technology) => (
-                <li key={technology.name}>{technology.icon}</li>
+                <li key={technology.name}>
+                  <Icon element={technology.icon} name={technology.name} />
+                </li>
               ))}
             </ul>
           </div>
