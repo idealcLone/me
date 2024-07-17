@@ -9,6 +9,14 @@ export default {
         secondary: '#f2f2f2',
         gradientEnd: '#050a14',
       },
+      screens: {
+        '3xl': { max: '1792px' },
+        '2xl': { max: '1536px' },
+        xl: { max: '1280px' },
+        lg: { max: '1024px' },
+        md: { max: '768px' },
+        sm: { max: '640px' },
+      },
       backgroundImage: (theme) => ({
         'gradient-primary': `linear-gradient(to bottom, ${theme('colors.primary')}, ${theme('colors.gradientEnd')})`,
         'gradient-secondary': `linear-gradient(to top, ${theme('colors.primary')}, ${theme('colors.gradientEnd')})`,

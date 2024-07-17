@@ -3,7 +3,7 @@ import CV from '../../components/Home/CV';
 
 export default function Home() {
   return (
-    <main className={'grid grid-cols-2 min-h-screen font-mono'}>
+    <main className={'grid grid-cols-2 md:grid-cols-1 min-h-screen font-mono'}>
       <Hero />
       <CV />
     </main>

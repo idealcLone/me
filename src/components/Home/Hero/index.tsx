@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div
       className={
-        'bg-gradient-primary text-secondary w-full h-full max-h-screen flex justify-center items-center sticky left-0 top-0'
+        'bg-gradient-primary text-secondary w-full h-full max-h-screen md:min-h-[600px] flex justify-center items-center sticky md:static left-0 top-0'
       }
     >
       <div className={'flex flex-col gap-6 items-center justify-center'}>

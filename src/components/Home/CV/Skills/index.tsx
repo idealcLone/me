@@ -10,7 +10,7 @@ export default function Skills() {
         }
       >
         {skills.map((skill) => (
-          <div className={'flex w-1/4 flex-col gap-4 items-center'}>
+          <div className={'flex w-1/4 md:w-1/3 flex-col gap-4 items-center'}>
             <h3>{skill.title}</h3>
             <ul className={'flex gap-4 items-center flex-wrap justify-center'}>
               {skill.stack.map((technology) => (
